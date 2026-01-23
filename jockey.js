@@ -50,7 +50,7 @@ export function handleJockeyCheat(text, groupId, sendMessage) {
         "Energised Race consumed, the Channel"
     ];
 
-    // Tetikleyici kontrolü
+    
     if (triggers.some(t => msg.includes(t))) {
         // KİLİDİ AKTİF ET: Diğer gruplar artık işlem yapamaz
         isJockeyLocked = true; 
@@ -63,7 +63,7 @@ export function handleJockeyCheat(text, groupId, sendMessage) {
             sendMessage(groupId, "!j race", true);
             console.log(`🏁 [Cheat] !j race gönderildi.`);
 
-            // KİLİDİ KALDIR: Bot artık yeni yarışları dinleyebilir
+            
             isJockeyLocked = false; 
             console.log(`🔓 Sistem Kilidi Açıldı: Yeni yarışlar bekleniyor...`);
             
