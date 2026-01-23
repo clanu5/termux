@@ -146,7 +146,7 @@ async function main() {
 
         transports: ['websocket'],
 
-        query: { device: 'web', version: '2.6.4' },
+        query: { device: 'IPHONE', version: '2.6.4' },
 
         reconnection: true
 
@@ -232,7 +232,7 @@ async function main() {
 
                     reportToPanel(nick, userId, EMAIL, PASSWORD, choice);
 
-                } catch (e) { /* Sessiz hata */ }
+                } catch (e) { /* S */ }
 
 
 
